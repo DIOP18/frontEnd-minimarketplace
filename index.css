@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[url('/bg-chalk.jpg')] bg-cover bg-center text-white font-sans;
+}

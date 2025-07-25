@@ -1,16 +1,17 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Header from './components/Header'
+import HeroSection from './components/HeroSection'
+import ProductSlider from './components/ProductSlider'
+import Services from './components/Services'
+import Footer from './components/Footer'
 
-const App = () => {
+export default function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        {/* Tes routes ici */}
-      </Routes>
-    </Router>
-  );
-};
-
-export default App;
+    <div className="bg-chalkboard min-h-screen">
+      <Header />
+      <HeroSection />
+      <ProductSlider />
+      <Services />
+      <Footer />
+    </div>
+  )
+}
